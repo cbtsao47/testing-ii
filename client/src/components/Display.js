@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 const Display = props => {
+  console.log("disaply", props);
   const { player, balls, strikes } = props.atBat;
   return (
     <>
