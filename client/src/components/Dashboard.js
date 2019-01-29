@@ -1,9 +1,13 @@
 import React, { Component } from "react";
-class Dashboard extends Component {
-  state = {};
-  render() {
-    return <div>dashboard component</div>;
-  }
-}
+const Dashboard = props => {
+  return (
+    <div>
+      <button onClick={props.strike}>strike</button>
+      <button onClick={props.ball}>ball</button>
+      <button onClick={props.foul}>foul</button>
+      <button onClick={props.hit}>hit</button>
+    </div>
+  );
+};
 
 export default Dashboard;
